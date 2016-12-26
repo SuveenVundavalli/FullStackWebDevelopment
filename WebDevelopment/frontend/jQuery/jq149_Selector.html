@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script>
+        // Default syntax $(Selector).(event/effect);
+        $(document).ready(function(){
+            // jQuery codes must be here
+
+            //click is a basic click
+            //dblclick is a double click function
+            //mouseout, mouseleave, mouseenter, mouseup, mousedown are mouse events
+
+            $('#div1').click(function(){
+                $('#div1').fadeOut();
+            });
+
+            $('.div2').click(function(){
+                $('.div2').fadeOut();
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div id="div1" style="background: orange; width:1000px; height: 300px;"></div>
+<div class="div2" style="background: red; width:1000px; height: 300px;"></div>
+</body>
+</html>

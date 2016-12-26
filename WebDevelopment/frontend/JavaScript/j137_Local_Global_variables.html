@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        // One way of stating a global variable is by declaring it out and top of a function.
+        // another way of declaring global variable is by declaring it without 'var' before declaring any 'var' (Local variable)
+
+        var var3 = "How are you?";
+        function func1(){
+            var2 = 'Hello Suveen, I am Global Variable';
+            var var1 = 'Hello Suveen, I am Local Variable';
+            var3 = "I am Fine";
+            return var1;
+        }
+
+        document.write(func1());
+        document.write('<br>');
+        document.write(var2);
+        document.write('<br>');
+        document.write(var3);
+        document.write('<br>');
+
+    </script>
+
+
+
+</body>
+</html>

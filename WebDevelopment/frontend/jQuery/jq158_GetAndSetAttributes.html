@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.color-2.1.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            //jQuery Code goes here
+
+            $('#img').mouseenter(function(){
+                $(this).attr('src','../bootstrap/images/img1.jpg')
+            });
+            $('#img').mouseleave(function(){
+                $(this).attr('src','../bootstrap/images/img2.jpg')
+            });
+            $('#btn1').click(function(){
+                var var1 = $('#img').attr('src')
+                alert(var1);
+            });
+
+            $('#btn2').click(function(){
+                $('#img').attr('width','1000px')
+                $('#img').attr('height','600px')
+            });
+            $('#btn3').click(function(){
+                $('#img').attr('width','250px')
+                $('#img').attr('height','150px')
+            });
+            $('#btn4').click(function(){
+                $('#img').attr('width','500px')
+                $('#img').attr('height','300px')
+            });
+
+
+        });
+    </script>
+    <style>
+        .main{
+            margin: 10px;
+        }
+        .body_style {
+            background: red;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            position: absolute;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="btn1">Click to get attr value</button>
+        <button id="btn2">click to change to double size</button>
+        <button id="btn3">click to change to half a size</button>
+        <button id="btn4">click to change to actual size</button> <br>
+
+        <img id="img" src="../bootstrap/images/img2.jpg" alt="img2" width="500px" height="300px">
+
+    </div>
+</body>
+</html>

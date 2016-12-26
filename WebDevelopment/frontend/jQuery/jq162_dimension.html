@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.color-2.1.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            //jQuery Code goes here
+
+            $('#btn1').click(function(){
+                $('#div1').addClass('body_style');
+            });
+            $('#btn2').click(function(){
+                $('#div1').addClass('body_style2');
+            });
+            $('#btn3').click(function(){
+                $('#div1').removeClass('body_style');
+            });
+            $('#btn4').click(function(){
+                $('#div1').removeClass('body_style2');
+            });
+            $('#btn5').click(function(){
+                $('#div1').addClass('color1');
+            });
+            $('#btn6').click(function(){
+                $('#div1').removeClass('color1');
+            });
+
+
+
+
+        });
+    </script>
+    <style>
+        .main{
+            margin: 10px;
+        }
+        .body_style {
+            background: red;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+        .body_style2 {
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border: 5px solid black;
+        }
+        .color1{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="btn1">Click to add first class</button>
+        <button id="btn2">Click to add second class</button>
+        <button id="btn3">Click to remove first class</button>
+        <button id="btn4">Click to remove second class</button>
+        <button id="btn5">Click to add hardcoded class</button>
+        <button id="btn6">Click to remove hardcoded class</button>
+        <div id="div1" class="color1">This is the div1</div>
+    </div>
+</body>
+</html>

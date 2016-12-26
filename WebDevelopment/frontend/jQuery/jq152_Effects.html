@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script>
+        // Default syntax $(Selector).(event/effect);
+        $(document).ready(function(){
+            $('#div1').click(function(){
+                $('#div2').toggle();
+            });
+            $('#div3').click(function(){
+                $('#div4').fadeToggle();
+            });
+            $('#div5').click(function(){
+                $('#div6').slideToggle();
+            });
+
+        });
+
+    </script>
+    <style>
+        .main{
+            margin:50px;
+            float: left;
+        }
+        .head_style{
+            background: red;
+            width:250px;
+            /*height: 50px;*/
+            text-align: center;
+            padding: 25px;
+        }
+        .body_style{
+            background: darkred;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div id="div1" class="head_style">Click to Toggle</div>
+    <div id="div2" class="body_style"></div>
+</div>
+<div class="main">
+    <div id="div3" class="head_style">Click to Toggle</div>
+    <div id="div4" class="body_style"></div>
+</div>
+<div class="main">
+    <div id="div5" class="head_style">Click to Toggle</div>
+    <div id="div6" class="body_style"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Syntax</title>
+
+    <script>
+
+        function ajax_func() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    document.getElementById('ret_data').innerHTML = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open('GET', 'A217_StylingTheProject.php',true);
+            xmlhttp.send();
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

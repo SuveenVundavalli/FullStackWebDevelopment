@@ -1,0 +1,70 @@
+.navbar-custom{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.navbar a{
+    color : gold;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    background : black;
+    color : white;
+}
+.navbar ul a:hover{
+    background : black;
+}
+
+header{
+    height : 450px;
+    background-image : url("images/img2.jpg");
+    background-position: center;
+    color: white;
+    padding:150px 0;
+    text-shadow: 3px 3px 5px black;
+
+
+}
+
+header h1{
+    font-size: 50px;
+}
+header p{
+    font-size: 20px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.img-center-custom{
+    margin: 0 auto;
+}
+
+.block-1{
+    font-size: 20px;
+    margin: 20px 0;
+    border-top: 1px solid black;
+    padding : 5px 0;
+}
+.block-2{
+    font-size: 20px;
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+    padding : 5px 0;
+    background: #f1f1f1;
+}
+.footer-custom{
+    width: 100%;
+    padding:20px;
+    background: black;
+    color: white;
+}
+.thumbnail img{
+    width : 200px;
+    height : 200px;
+}
+.about-us{
+    font-size: 18px;
+    text-align: justify;
+    padding:5px 0;
+    line-height:30px;
+}

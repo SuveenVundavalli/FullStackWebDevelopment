@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function func1(){
+            alert('Hello, you clicked the button');
+        }
+
+        var var1 = 'Hello world';
+        document.write(var1);
+        document.write('<br>');
+        document.write(var1.toUpperCase());
+        document.write('<br>');
+        document.write(var1.toLowerCase());
+        document.write('<br>');
+        document.write(var1.replace('world', 'class'));
+        document.write('<br>');
+        document.write(var1.slice(0,5));
+        document.write('<br>');
+        document.write(var1.indexOf('o'));
+        document.write('<br>');
+        document.write(var1.lastIndexOf('o'));
+        document.write('<br>');
+
+    </script>
+
+<button onclick="func1()">Click me</button>
+<div onmouseover="alert('Hello, you Hovered over the div')" style="background-color: green">This is the div</div>
+<div onmouseout="alert('Hello, you moved out of the div')" style="background-color: orange">This is the div</div>
+
+</body>
+</html>

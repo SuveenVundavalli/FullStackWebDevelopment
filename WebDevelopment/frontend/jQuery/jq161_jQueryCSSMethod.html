@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.color-2.1.2.js"></script>
+    <script>
+        $(document).ready(function(){
+            //jQuery Code goes here
+
+            $('#btn1').click(function(){
+                //$('#div1').css('background','red');
+                $('#div1').css({'background':'red', 'color':'white', 'font-size':'30px', 'width':'200px'});
+            });
+
+
+        });
+    </script>
+    <style>
+        .main{
+            margin: 10px;
+        }
+        .body_style {
+            background: red;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            position: absolute;
+            color: white;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="btn1">click me to change div color</button>
+
+        <div id="div1">
+            This is div1
+        </div>
+    </div>
+</body>
+</html>

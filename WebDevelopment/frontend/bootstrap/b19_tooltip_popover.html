@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="../bootstrapFiles/css/bootstrap.css">
+    <script src="../bootstrapFiles/js/jquery.js"></script>
+    <script src="../bootstrapFiles/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrapFiles/css/font-awesome.css">
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('[data-toggle="popover"]').popover();
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <br><br><br>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="This is the link" target="_blank">The Link</a><br>
+        <a href="#" data-toggle="tooltip" data-placement="right" title="This is the link" target="_blank">The Link</a><br>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="This is the link" target="_blank">The Link</a><br>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="This is the link" target="_blank">The Link</a><br>
+        <br><br><br>
+
+        <a href="#" data-toggle="popover" title="The popover" data-content="The popover Content. I hope you can see this.">Click to see the popover</a><br>
+        <a href="#" data-toggle="popover" title="The popover" data-trigger="hover" data-content="The popover Content. I hope you can see this.">Hover to see the popover</a><br>
+
+
+    </div>
+</body>
+</html>

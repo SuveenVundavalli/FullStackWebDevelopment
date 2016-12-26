@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="../bootstrapFiles/css/bootstrap.css">
+    <script src="../bootstrapFiles/js/jquery.js"></script>
+    <script src="../bootstrapFiles/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrapFiles/css/font-awesome.css">
+</head>
+<body>
+<!--Tabs-->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Music</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-header" data-toggle="dropdown">Articles <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br><hr>
+        <!--Pills-->
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Articles</a></li>
+        </ul>
+        <br>
+        <hr>
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Articles</a></li>
+        </ul>
+        <br>
+        <hr>
+        <div class="col-md-4">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+        </div>
+        <!--Dynamic Tabs and Pills-->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#home1" data-toggle="tab">Home</a></li>
+            <li><a href="#software1" data-toggle="tab">Software</a></li>
+            <li><a href="#music1" data-toggle="tab">Music</a></li>
+            <li><a href="#article1" data-toggle="tab">Articles</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home1" class="tab-pane fade in active">
+                <h2>Home</h2>
+                <p>This is Home Content</p>
+            </div>
+            <div id="software1" class="tab-pane fade">
+                <h2>Software</h2>
+                <p>This is Software Content</p>
+            </div>
+            <div id="music1" class="tab-pane fade">
+                <h2>Music</h2>
+                <p>This is Music Content</p>
+            </div>
+            <div id="article1" class="tab-pane fade">
+                <h2>Articles</h2>
+                <p>This is Articles Content</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#home2" data-toggle="pill">Home</a></li>
+            <li><a href="#software2" data-toggle="pill">Software</a></li>
+            <li><a href="#music2" data-toggle="pill">Music</a></li>
+            <li><a href="#article2" data-toggle="pill">Articles</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home2" class="tab-pane fade in active">
+                <h2>Home</h2>
+                <p>This is Home Content</p>
+            </div>
+            <div id="software2" class="tab-pane fade">
+                <h2>Software</h2>
+                <p>This is Software Content</p>
+            </div>
+            <div id="music2" class="tab-pane fade">
+                <h2>Music</h2>
+                <p>This is Music Content</p>
+            </div>
+            <div id="article2" class="tab-pane fade">
+                <h2>Articles</h2>
+                <p>This is Articles Content</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+    </div>
+</body>
+</html>

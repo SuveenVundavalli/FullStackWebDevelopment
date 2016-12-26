@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="../bootstrapFiles/css/bootstrap.css">
+    <script src="../bootstrapFiles/js/jquery.js"></script>
+    <script src="../bootstrapFiles/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrapFiles/css/font-awesome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>Bootstrap Styled Form</h2>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input id="username" type="text" class="form-control" placeholder="User Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">User Name</label>
+                <input id="email" type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="country">Select your country</label>
+                <select name="country" id="country" class="form-control">
+                    <option value="in">India</option>
+                    <option value="pk">Pakisthan</option>
+                    <option value="se">Sweden</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" class="form-control" placeholder="Comments"></textarea>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <h2>The horizontal form</h2>
+
+        <hr>
+
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="username1" class="col-md-2 control-label">Username</label>
+                <div class="col-md-10">
+                    <input type="username" class="form-control" id="username1" placeholder="Username">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password1" class="col-md-2 control-label">Password</label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" id="password1" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-2">
+                    <button class="btn btn-success btn-block">Submit</button>
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+</body>
+</html>

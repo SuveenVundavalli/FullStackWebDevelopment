@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function func1(){
+            alert('This is an Alert');
+        }
+        func1();
+
+        function func2(val1) {
+            document.write('Value = '+val1+'<br>');
+        }
+
+        func2(3);
+        func2('Hello World');
+
+        function Calculator(val2, val3) {
+            document.write('Sum = ');
+            document.write(val2+val3);
+            document.write('<br>');
+            return val2+val3;
+        }
+
+        a = Calculator(2,3);
+        b = Calculator('Suveen ','is great. ');
+        document.write(a+'<br>');
+        document.write(b+'<br>');
+    </script>
+
+
+
+</body>
+</html>

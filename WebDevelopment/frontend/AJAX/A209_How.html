@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!--
+You need a HTML and PHP to work with AJAX
+AJAX works with XML
+AJAX works on Javascript and jQuery
+
+it deals with retrieving data from php
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn AJAX</title>
+
+    <script>
+
+        function ajax_func() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    var receiver = document.getElementById('get_data');
+                    receiver.innerHTML = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open('GET', 'A209_How.php?var1=Walton&var2=Apples',true);
+            xmlhttp.send();
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <button onclick="ajax_func();">Click to retrieve data from PHP</button>
+    <div id="get_data"> The Receiver Div</div>
+</body>
+</html>

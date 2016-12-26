@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.color-2.1.2.js"></script>
+    <link rel="stylesheet" href="CSS/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //jQuery code goes here
+
+            $('#menu').menu();
+
+        });
+    </script>
+
+    <style>
+
+        body {  padding: 50px;  }
+        /*
+        #div1 {  background: orange;  border : black 2px solid;  width: 200px;  height: 200px;  float: left;  }
+        #div3 {  background: red;  border : black 2px solid;  width: 200px;  height: 200px;  float: left;  }
+        #div2 {  background: green;  border : black 2px solid;  width: 400px;  height: 400px;  float: right;  }
+        */
+        .ui-autocomplete {
+            max-height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .ui-menu {
+            width: 300px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<ul id="menu">
+    <li>Home</li>
+    <li>Software</li>
+    <li>Music</li>
+    <li>Technology
+        <ul>
+            <li>Information Technology
+                <ul>
+                    <li>Computer</li>
+                    <li>Mobile</li>
+                    <li>Wireless</li>
+                    <li>Wired</li>
+                </ul>
+            </li>
+            <li>Mechanical Technology</li>
+            <li>Chemical Technology</li>
+            <li>Electrical Technology</li>
+        </ul>
+    </li>
+    <li>Contact Us</li>
+
+</ul>
+</body>
+</html>

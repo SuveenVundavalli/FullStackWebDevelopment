@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery UI</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.color-2.1.2.js"></script>
+    <link rel="stylesheet" href="CSS/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //jQuery code goes here
+
+            $('#main_div, #main_div2').sortable({
+                connectWith: '.linking'
+            });
+
+        });
+    </script>
+
+    <style>
+        /*
+        #div1 {
+            background: orange;
+            border : black 2px solid;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        #div3 {
+            background: red;
+            border : black 2px solid;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        #div2 {
+        //background: green;
+            border : black 2px solid;
+            width: 400px;
+            height: 400px;
+            float: right;
+
+        } */
+        .div1{
+            background: silver;
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            height: 40px;
+            margin: 20px;
+            color: white;
+        }
+        .div2{
+            background: orange;
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            height: 40px;
+            margin: 20px;
+            color: white;
+        }
+
+        #main_div {
+            float: left;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            width: 240px;
+
+        }
+        #main_div2 {
+            float: left;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            width: 240px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="main_div" class="linking">
+        <div class="div1">A</div>
+        <div class="div1">B</div>
+        <div class="div1">C</div>
+        <div class="div1">D</div>
+    </div>
+    <div id="main_div2" class="linking">
+        <div class="div2">1</div>
+        <div class="div2">2</div>
+        <div class="div2">3</div>
+        <div class="div2">4</div>
+    </div>
+
+</body>
+</html>

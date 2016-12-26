@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Canvas</title>
+</head>
+<body>
+    <div>Canvas</div>
+    <canvas id="canvas1" width = '200px' height = '200px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas2" width = '200px' height = '200px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas3" width = '500px' height = '500px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas4" width = '500px' height = '500px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas5" width = '500px' height = '500px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas6" width = '1000px' height = '1000px' style="border : 2px solid black"></canvas>
+    <canvas id="canvas7" width = '1000px' height = '1000px' style="border : 2px solid black"></canvas>
+
+
+
+    <script>
+        // #canvas 1    Drawing rectangle
+        c1 = document.getElementById('canvas1');
+        c1_x = c1.getContext('2d');
+        c1_x.fillStyle = 'orange';
+        c1_x.fillRect(50,50,100,100);     //c1_x.fillRect(left,top,width,height);
+
+        // #canvas2     Drawing a line
+        c2 = document.getElementById('canvas2');
+        c2_x = c2.getContext('2d');     //Making canvas 2d
+        c2_x.beginPath();               //Starting function
+        c2_x.moveTo(0,0);               //c2_x.moveTo(left,top); - Start of line
+        c2_x.lineTo(200,200);           //c2_x.lineTo(left,bottom); - End of line
+        c2_x.lineWidth = 2;             //Width of the line
+        c2_x.strokeStyle = 'red';       // Line color
+        c2_x.lineCap = 'round';         //Line edge type
+        c2_x.stroke();
+
+        //#canvas3      Drawing a circle
+
+        //Drawing a circle
+        c3x = 250;
+        c3y = 250;
+        c3radius = 150;
+        c3start_angle = 0;
+        c3end_angle = 2 * Math.PI;
+
+        c3 = document.getElementById('canvas3');
+        c3_x = c3.getContext('2d');
+
+        c3_x.beginPath();
+        c3_x.arc(c3x,c3y,c3radius,c3start_angle,c3end_angle);
+        c3_x.stroke();
+
+        //#canvas4      Drawing an Arc (Quadratic Curve)
+
+        c4_control_point_x = 250;
+        c4_control_point_y = 50;
+        c4_ending_point_x = 400;
+        c4_ending_point_y = 250;
+
+        c4 = document.getElementById('canvas4');
+        c4_x = c4.getContext('2d');
+
+        c4_x.beginPath();
+        c4_x.moveTo(100,250);
+        c4_x.quadraticCurveTo(c4_control_point_x,c4_control_point_y,c4_ending_point_x,c4_ending_point_y);
+        c4_x.stroke();
+
+        //#canvas5      Bezier Curve
+        c5_control_point_x1 = 150;
+        c5_control_point_y1 = 100;
+        c5_control_point_x2 = 350;
+        c5_control_point_y2 = 400;
+        c5_ending_point_x = 450;
+        c5_ending_point_y = 250;
+
+        c5 = document.getElementById('canvas5');
+        c5_x = c5.getContext('2d');
+
+        c5_x.beginPath();
+        c5_x.moveTo(50,250);
+        c5_x.bezierCurveTo(c5_control_point_x1,c5_control_point_y1,c5_control_point_x2,c5_control_point_y2,c5_ending_point_x,c5_ending_point_y);
+        c5_x.stroke();
+
+        //#canvas6      Creating Paths
+        c6_control_point_x1 = 150;
+        c6_control_point_y1 = 50;
+        c6_control_point_x2 = 300;
+        c6_control_point_y2 = 50;
+        c6_ending_point_x = 400;
+        c6_ending_point_y = 350;
+
+        c6x = 650;
+        c6y = 800;
+        c6radius = 150;
+        c6start_angle = 0;
+        c6end_angle = Math.PI;
+
+        c6 = document.getElementById('canvas6');
+        c6_x = c6.getContext('2d');
+
+        c6_x.beginPath();
+        c6_x.moveTo(50,350);
+        c6_x.bezierCurveTo(c6_control_point_x1,c6_control_point_y1,c6_control_point_x2,c6_control_point_y2,c6_ending_point_x,c6_ending_point_y);
+        c6_x.lineTo(800,800);
+        c6_x.arc(c6x,c6y,c6radius,c6start_angle,c6end_angle);
+        c6_x.lineTo(1000,0);
+        c6_x.stroke();
+
+        //#canvas7      Creating Paths
+        c7 = document.getElementById('canvas7');
+        c7_x = c7.getContext('2d');
+
+        c7_x.beginPath();
+        c7_x.moveTo(50,50);
+        c7_x.lineTo(200,200);
+        c7_x.lineTo(300,200);
+        c7_x.lineTo(400,300);
+        c7_x.lineTo(500,200);
+        c7_x.lineTo(50,50);
+
+        c7_x.stroke();
+
+    </script>
+</body>
+
+</html>

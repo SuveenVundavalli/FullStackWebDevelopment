@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="../bootstrapFiles/css/bootstrap.css">
+    <script src="../bootstrapFiles/js/jquery.js"></script>
+    <script src="../bootstrapFiles/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrapFiles/css/font-awesome.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="col-md-4">
+            <button class="bth btn-warning" data-toggle="collapse" data-target="#coll1">Collapse 1</button>
+
+            <div id="coll1" class="collapse in ">This is a collapsible panel</div>
+
+            <a href="#coll2" class="btn btn-danger" data-toggle="collapse">Collapse 2</a>
+            <div id="coll2" class="collapse in">This is the second collapse panel</div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#collapse123">Click to open the panel</div>
+                <div class="panel-collapse collapse" id="collapse123">
+                    <div class="body">
+                        This is the panel body
+                    </div>
+                    <div class="panel-footer">
+                        This is the panel footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><a data-toggle="collapse" href="#collapse1231">Click to open the panel</a></div>
+                <div class="panel-collapse collapse" id="collapse1231">
+                    <div class="body">
+                        This is the panel body
+                    </div>
+                    <div class="panel-footer">
+                        This is the panel footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel-group" id="parent_div">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#a_col1" data-parent="#parent_div" data-toggle="collapse">The first panel</a>
+                        </div>
+                        <div id = "a_col1" class="panel-collapse collapse">
+                            <div class="panel-body">This is first panel body</div>
+                            <div class="panel-footer">This is panel footer</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#a_col2" data-parent="#parent_div" data-toggle="collapse">The second panel</a>
+                        </div>
+                        <div id = "a_col2" class="panel-collapse collapse">
+                            <div class="panel-body">This is first panel body</div>
+                            <div class="panel-footer">This is panel footer</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#a_col3" data-parent="#parent_div" data-toggle="collapse">The third panel</a>
+                        </div>
+                        <div id = "a_col3" class="panel-collapse collapse">
+                            <div class="panel-body">This is first panel body</div>
+                            <div class="panel-footer">This is panel footer</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#a_col4" data-parent="#parent_div" data-toggle="collapse">The fourth panel</a>
+                        </div>
+                        <div id = "a_col4" class="panel-collapse collapse">
+                            <div class="panel-body">This is first panel body</div>
+                            <div class="panel-footer">This is panel footer</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

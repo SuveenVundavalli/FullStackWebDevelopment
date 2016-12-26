@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+    <link rel="stylesheet" href="../bootstrapFiles/css/bootstrap.css">
+    <script src="../bootstrapFiles/js/jquery.js"></script>
+    <script src="../bootstrapFiles/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../bootstrapFiles/css/font-awesome.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>Form Validation</h2>
+        </div>
+
+        <form action="" class="form-horizontal">
+            <div class="form-group has-success has-feedback">
+                <label for="username1" class="col-md-2 control-label">Username</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="username1" placeholder="Username">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-error has-feedback">
+                <label for="email1" class="col-md-2 control-label">Email</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="email1" placeholder="Email">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-warning has-feedback">
+                <label for="password1" class="col-md-2 control-label">Password</label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" id="password1" placeholder="Password">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-2 col-md-offset-2">
+                    <button class="btn btn-success btn-block">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

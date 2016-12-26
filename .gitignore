@@ -1,3 +1,9 @@
+.idea
+.idea/*
+.IDEA
+.IDEA/*
+
+
 .htaccess
 /config.php
 admin/config.php
